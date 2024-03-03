@@ -131,6 +131,9 @@ sudo ip netns exec ns2 ip addr add 192.168.1.2/24 dev veth2
 ```bash
 sudo ip netns exec ns1 ip link set veth1 up
 sudo ip netns exec ns2 ip link set veth2 up
+
+sudo ip link set dev veth-1-br up
+sudo ip link set dev veth-2-br up
 ```
 We can accetive the loopback as well
 ```bash
